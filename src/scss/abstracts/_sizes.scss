@@ -10,6 +10,7 @@ $sizes: (
   800: 4rem,
   850: 4.5rem,
   900: 5rem,
+  950: 6rem,
 );
 
 :root {
@@ -21,5 +22,11 @@ $sizes: (
 @each $size, $value in $sizes {
   .padding-block-#{$size} {
     padding-block: $value;
+  }
+}
+
+@each $size, $value in $sizes {
+  .margin-block-#{$size} {
+    margin-block: $value;
   }
 }

@@ -7,7 +7,7 @@ body {
   font-size: fonts.$fs-body;
   font-family: fonts.$font-family-primary;
   color: func.getColor(primary, 400) !important;
-  background-color: func.getColor(primary, 100);
+  background-color: func.getColor(neutral, 000);
 }
 
 .square-button {
@@ -28,11 +28,6 @@ body {
   font-size: func.getFontSize(small, 450);
   font-weight: func.getFontWeight(medium);
   transition: 0.3s;
-
-  &:hover {
-    background-color: func.getColor(primary, 400);
-    color: func.getColor(neutral, 000);
-  }
 }
 
 .year-button {

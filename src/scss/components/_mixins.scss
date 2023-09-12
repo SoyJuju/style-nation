@@ -10,6 +10,24 @@
   justify-content: space-between;
 }
 
+@mixin spaceEven {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@mixin spaceAround {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin spaceAroundTop {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+
 @mixin spaceBtwnBottom {
   display: flex;
   align-items: flex-end;
@@ -35,4 +53,10 @@
   display: flex;
   align-items: center;
   justify-content: end;
+}
+
+@mixin justifyStart {
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
