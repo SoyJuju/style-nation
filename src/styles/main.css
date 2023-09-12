@@ -362,6 +362,21 @@ body {
   font-weight: 500;
 }
 
+.round-button {
+  border-radius: 0.5rem;
+  border: 0;
+  padding: 0.4rem 1.3rem;
+  cursor: pointer;
+  color: #1a3760;
+  font-size: 1.125rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.round-button:hover {
+  background-color: #1a3760;
+  color: #ffffff;
+}
+
 .year-button {
   cursor: pointer;
   border-radius: 100vmax;
@@ -550,13 +565,13 @@ svg {
   color: #1a3760;
 }
 .navbar--nav-pc ul li a:hover {
-  color: #1a3760;
+  opacity: 0.7;
 }
 @media (max-width: 50em) {
   .navbar--nav-mobile {
     position: absolute;
     display: block;
-    inset: 6rem 0 auto 0;
+    inset: 6.7rem 0 auto 0;
     background-color: #1a3760;
     padding-block: 2.37rem;
     font-size: 1rem;
@@ -574,13 +589,17 @@ svg {
     color: #ffffff;
   }
   .navbar--nav-mobile ul li a:hover {
-    color: #ffffff;
+    opacity: 0.7;
   }
 }
 
 .main-heading {
-  position: relative;
   padding-top: 6.7rem;
+}
+.main-heading--background-image {
+  position: relative;
+  width: min(100%, 1300px);
+  margin-inline: auto;
 }
 .main-heading--background-image img {
   width: min(100%, 1300px);
@@ -593,23 +612,34 @@ svg {
     border-radius: 0.8rem;
   }
 }
-@media (max-width: 37em) {
-  .main-heading--background-image img {
-    transform: scale(1.5);
-  }
-}
 .main-heading--content {
   position: absolute;
-  top: 60%;
-  left: 10%;
+  top: 50%;
+  left: 8%;
   transform: translateY(-50%);
   color: #ffffff;
+}
+.main-heading--content h2 {
+  font-size: 6.7vw;
+  height: 8.3vw;
+}
+.main-heading--content h3 {
+  font-size: 8.3vw;
+  height: 13.3vw;
 }
 @media (min-width: 60em) {
   .main-heading--content h2 {
     font-size: 4rem;
+    height: 5rem;
   }
   .main-heading--content h3 {
     font-size: 5rem;
+    height: 8rem;
+  }
+}
+@media (max-width: 60em) {
+  .main-heading--button {
+    font-size: 1rem;
+    padding: clamp(0.2rem, 5vw, 0.4rem) clamp(0.8rem, 5vw, 1.1rem);
   }
 }/*# sourceMappingURL=main.css.map */

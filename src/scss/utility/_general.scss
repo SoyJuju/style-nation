@@ -19,6 +19,22 @@ body {
   font-weight: func.getFontWeight(medium);
 }
 
+.round-button {
+  border-radius: 0.5rem;
+  border: 0;
+  padding: 0.4rem 1.3rem;
+  cursor: pointer;
+  color: func.getColor(primary, 400);
+  font-size: func.getFontSize(small, 450);
+  font-weight: func.getFontWeight(medium);
+  transition: 0.3s;
+
+  &:hover {
+    background-color: func.getColor(primary, 400);
+    color: func.getColor(neutral, 000);
+  }
+}
+
 .year-button {
   color: func.getColor(neutral, 100);
   cursor: pointer;

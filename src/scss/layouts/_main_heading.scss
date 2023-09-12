@@ -3,10 +3,13 @@
 @use '../utility/breakpoints' as *;
 
 .main-heading {
-  position: relative;
   padding-top: 6.7rem;
 
   &--background-image {
+    position: relative;
+    width: min(100%, 1300px);
+    margin-inline: auto;
+
     img {
       width: min(100%, 1300px);
       margin-inline: auto;
@@ -16,28 +19,43 @@
       @media (min-width: 1300px) {
         border-radius: 0.8rem;
       }
-
-      @media (max-width: $breakpoint-400) {
-        transform: scale(1.5);
-      }
     }
   }
 
   &--content {
     position: absolute;
-    top: 60%;
-    left: 10%;
+    top: 50%;
+    left: 8%;
     transform: translateY(-50%);
     color: getColor(neutral, 000);
+
+    h2 {
+      font-size: 6.7vw;
+      height: 8.3vw;
+    }
+
+    h3 {
+      font-size: 8.3vw;
+      height: 13.3vw;
+    }
 
     @media (min-width: $breakpoint-800) {
       h2 {
         font-size: 4rem;
+        height: 5rem;
       }
 
       h3 {
         font-size: 5rem;
+        height: 8rem;
       }
+    }
+  }
+
+  &--button {
+    @media (max-width: $breakpoint-800) {
+      font-size: getFontSize(small, 400);
+      padding: clamp(0.2rem, 5vw, 0.4rem) clamp(0.8rem, 5vw, 1.1rem);
     }
   }
 }
