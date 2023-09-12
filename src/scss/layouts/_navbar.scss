@@ -1,0 +1,110 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+@use '../utility/breakpoints' as *;
+
+.navbar {
+  background-color: getColor(accent, 100);
+  padding-block: 1rem;
+
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+
+  &--container {
+    @include spaceBtwn;
+  }
+
+  &--left {
+    @include alignCenter;
+    gap: 0.8rem;
+  }
+
+  &--logo {
+    width: 2.8rem;
+    border-radius: 50%;
+  }
+
+  &--mobile {
+    display: none;
+
+    @media (max-width: $breakpoint-500) {
+      display: block;
+      @include centerDiv;
+      width: 3rem;
+      height: 3rem;
+      background-color: transparent;
+      border: 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      img {
+        width: 1.8rem;
+      }
+    }
+  }
+
+  &--right {
+    display: block;
+    @media (max-width: $breakpoint-500) {
+      display: none;
+    }
+  }
+
+  &--nav-pc {
+    @media (max-width: $breakpoint-500) {
+      display: none;
+    }
+
+    ul {
+      width: 15rem;
+      @include spaceBtwn;
+
+      li {
+        transition-duration: 0.15s;
+        cursor: pointer;
+        text-align: center;
+
+        a {
+          color: getColor(primary, 400);
+
+          &:hover {
+            color: getColor(primary, 400);
+          }
+        }
+      }
+    }
+  }
+
+  &--nav-mobile {
+    @media (max-width: $breakpoint-500) {
+      position: absolute;
+      display: block;
+      inset: 5rem 0 auto 0;
+      background-color: getColor(primary, 400);
+      padding-block: 1.1rem;
+
+      ul {
+        display: grid;
+        gap: 1rem;
+
+        li {
+          transition-duration: 0.15s;
+          cursor: pointer;
+          text-align: center;
+
+          a {
+            color: getColor(neutral, 000);
+
+            &:hover {
+              color: getColor(neutral, 000);
+            }
+          }
+        }
+      }
+    }
+  }
+}
