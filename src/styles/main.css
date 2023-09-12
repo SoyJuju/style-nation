@@ -125,11 +125,16 @@
 }
 
 :root {
+  --fw-thin: 100;
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-bold: 700;
   --fw-black: 900;
+}
+
+.fw-thin {
+  font-weight: 100;
 }
 
 .fw-light {
@@ -352,6 +357,7 @@ body {
   border: 0;
   padding: 0.4rem 1.3rem;
   cursor: pointer;
+  color: #1a3760;
   font-size: 1.125rem;
   font-weight: 500;
 }
@@ -481,6 +487,7 @@ svg {
   }
 }
 .navbar {
+  background-color: #ffffff;
   padding-block: 1rem;
   position: fixed;
   right: 0;
@@ -490,29 +497,28 @@ svg {
 }
 .navbar--container {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 .navbar--left {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 0.8rem;
 }
+.navbar--logo-container {
+  height: 4.1rem;
+}
 .navbar--logo {
-  width: 2.8rem;
-  border-radius: 50%;
+  width: 5rem;
 }
 .navbar--mobile {
   display: none;
 }
-@media (max-width: 40.5em) {
+@media (max-width: 50em) {
   .navbar--mobile {
-    display: block;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3rem;
-    height: 3rem;
+    align-items: flex-end;
+    padding-bottom: 0.38rem;
     background-color: transparent;
     border: 0;
   }
@@ -523,21 +529,14 @@ svg {
     width: 1.8rem;
   }
 }
-.navbar--right {
-  display: block;
-}
-@media (max-width: 40.5em) {
-  .navbar--right {
-    display: none;
-  }
-}
-@media (max-width: 40.5em) {
+@media (max-width: 50em) {
   .navbar--nav-pc {
     display: none;
   }
 }
 .navbar--nav-pc ul {
-  width: 15rem;
+  width: 22rem;
+  padding-bottom: 0.35rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -553,17 +552,18 @@ svg {
 .navbar--nav-pc ul li a:hover {
   color: #1a3760;
 }
-@media (max-width: 40.5em) {
+@media (max-width: 50em) {
   .navbar--nav-mobile {
     position: absolute;
     display: block;
-    inset: 5rem 0 auto 0;
+    inset: 6rem 0 auto 0;
     background-color: #1a3760;
-    padding-block: 1.1rem;
+    padding-block: 2.37rem;
+    font-size: 1rem;
   }
   .navbar--nav-mobile ul {
     display: grid;
-    gap: 1rem;
+    gap: 1.87rem;
   }
   .navbar--nav-mobile ul li {
     transition-duration: 0.15s;
@@ -575,5 +575,41 @@ svg {
   }
   .navbar--nav-mobile ul li a:hover {
     color: #ffffff;
+  }
+}
+
+.main-heading {
+  position: relative;
+  padding-top: 6.7rem;
+}
+.main-heading--background-image img {
+  width: min(100%, 1300px);
+  margin-inline: auto;
+  filter: brightness(60%);
+  transition: 1s ease-in-out;
+}
+@media (min-width: 1300px) {
+  .main-heading--background-image img {
+    border-radius: 0.8rem;
+  }
+}
+@media (max-width: 37em) {
+  .main-heading--background-image img {
+    transform: scale(1.5);
+  }
+}
+.main-heading--content {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+@media (min-width: 60em) {
+  .main-heading--content h2 {
+    font-size: 4rem;
+  }
+  .main-heading--content h3 {
+    font-size: 5rem;
   }
 }/*# sourceMappingURL=main.css.map */

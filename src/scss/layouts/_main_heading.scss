@@ -1,0 +1,43 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+@use '../utility/breakpoints' as *;
+
+.main-heading {
+  position: relative;
+  padding-top: 6.7rem;
+
+  &--background-image {
+    img {
+      width: min(100%, 1300px);
+      margin-inline: auto;
+      filter: brightness(60%);
+      transition: 1s ease-in-out;
+
+      @media (min-width: 1300px) {
+        border-radius: 0.8rem;
+      }
+
+      @media (max-width: $breakpoint-400) {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  &--content {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: getColor(neutral, 000);
+
+    @media (min-width: $breakpoint-800) {
+      h2 {
+        font-size: 4rem;
+      }
+
+      h3 {
+        font-size: 5rem;
+      }
+    }
+  }
+}

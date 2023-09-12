@@ -1,9 +1,12 @@
 ---
+import '../styles/main.css';
+
 import Layout from '../layouts/Layout.astro';
+
+import Home from '../react/layouts/home/Home';
 ---
 
 <Layout title="Style Nation">
-  <main>
-    <div></div>
-  </main>
+  <Home client:load />
+  <section class="padding-block-800"></section>
 </Layout>

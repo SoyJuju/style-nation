@@ -3,7 +3,7 @@
 @use '../utility/breakpoints' as *;
 
 .navbar {
-  background-color: getColor(accent, 100);
+  background-color: getColor(neutral, 000);
   padding-block: 1rem;
 
   position: fixed;
@@ -13,27 +13,28 @@
   z-index: 10;
 
   &--container {
-    @include spaceBtwn;
+    @include spaceBtwnBottom;
   }
 
   &--left {
-    @include alignCenter;
+    @include alignBottom;
     gap: 0.8rem;
   }
 
+  &--logo-container {
+    height: 4.1rem;
+  }
+
   &--logo {
-    width: 2.8rem;
-    border-radius: 50%;
+    width: 5rem;
   }
 
   &--mobile {
     display: none;
 
-    @media (max-width: $breakpoint-500) {
-      display: block;
-      @include centerDiv;
-      width: 3rem;
-      height: 3rem;
+    @media (max-width: $breakpoint-600) {
+      @include alignBottom;
+      padding-bottom: 0.38rem;
       background-color: transparent;
       border: 0;
 
@@ -47,20 +48,14 @@
     }
   }
 
-  &--right {
-    display: block;
-    @media (max-width: $breakpoint-500) {
-      display: none;
-    }
-  }
-
   &--nav-pc {
-    @media (max-width: $breakpoint-500) {
+    @media (max-width: $breakpoint-600) {
       display: none;
     }
 
     ul {
-      width: 15rem;
+      width: 22rem;
+      padding-bottom: 0.35rem;
       @include spaceBtwn;
 
       li {
@@ -80,16 +75,17 @@
   }
 
   &--nav-mobile {
-    @media (max-width: $breakpoint-500) {
+    @media (max-width: $breakpoint-600) {
       position: absolute;
       display: block;
-      inset: 5rem 0 auto 0;
+      inset: 6rem 0 auto 0;
       background-color: getColor(primary, 400);
-      padding-block: 1.1rem;
+      padding-block: 2.37rem;
+      font-size: getFontSize(small, 400);
 
       ul {
         display: grid;
-        gap: 1rem;
+        gap: 1.87rem;
 
         li {
           transition-duration: 0.15s;

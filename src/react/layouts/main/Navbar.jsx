@@ -1,24 +1,20 @@
 import '../../../styles/main.css';
 
-import { useState, useEffect } from 'react';
-import { useMediaQuery } from '@react-hook/media-query';
+import useMobileMenu from '../../hooks/useMobileMenu';
 
+import logo from '../../../assets/logo.png';
 import menu from '../../../assets/menu-icon.svg';
 
 export default function Navbar() {
-  const [mobileMenu, setMobileMenu] = useState(false);
-  const isMobile = useMediaQuery('(max-width: 40.5em)');
-
-  useEffect(() => {
-    if (!isMobile) {
-      setMobileMenu(false);
-    }
-  }, [isMobile]);
+  const { mobileMenu, setMobileMenu } = useMobileMenu();
 
   return (
     <header className="navbar">
       <section className="navbar--container | container">
         <div className="navbar--left">
+          <div className="navbar--logo-container">
+            <img className="navbar--logo" src={logo.src} alt="" />
+          </div>
           <h1 className="navbar--title | fs-small-700 fw-bold text-primary-400">
             Style Nation
           </h1>
@@ -35,6 +31,9 @@ export default function Navbar() {
           <ul role="list">
             <li className="navbar--links">
               <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">Featured</a>
             </li>
             <li>
               <a href="/">Cars</a>

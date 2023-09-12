@@ -10,12 +10,29 @@
   justify-content: space-between;
 }
 
+@mixin spaceBtwnBottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
 @mixin alignCenter {
   display: flex;
   align-items: center;
 }
 
+@mixin alignBottom {
+  display: flex;
+  align-items: flex-end;
+}
+
 @mixin justifyCenter {
   display: flex;
   justify-content: center;
+}
+
+@mixin centerLeftDiv {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }

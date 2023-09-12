@@ -14,7 +14,7 @@ body {
   border: 0;
   padding: 0.4rem 1.3rem;
   cursor: pointer;
-  color: func.getColor(neutral, 100);
+  color: func.getColor(primary, 400);
   font-size: func.getFontSize(small, 450);
   font-weight: func.getFontWeight(medium);
 }
