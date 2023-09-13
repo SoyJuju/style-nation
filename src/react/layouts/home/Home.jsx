@@ -1,13 +1,13 @@
 import '../../../styles/main.css';
 
 import MainHeading from '../../components/home/MainHeading';
-import Footer from '../main/Footer';
+import CarBrands from '../../components/home/CarBrands';
 
 export default function Home() {
   return (
     <main>
       <MainHeading />
-      <Footer />
+      <CarBrands />
     </main>
   );
 }

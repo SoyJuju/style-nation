@@ -8,7 +8,7 @@ import messenger from '../../../assets/messenger-icon.svg';
 export default function Footer() {
   return (
     <footer className="footer | padding-block-700" id="footer">
-      <div className="footer--container | container bg-primary-100">
+      <div className="footer--container | large-container bg-primary-100">
         <div className="footer--title | padding-block-600">
           <h1 className="fs-small-800 text-primary-400 padding-block-200 fw-bold">
             Get In Touch

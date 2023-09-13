@@ -10,15 +10,18 @@ export default function Navbar() {
 
   return (
     <header className="navbar">
-      <section className="navbar--container | container">
-        <div className="navbar--left">
-          <div className="navbar--logo-container">
-            <img className="navbar--logo" src={logo.src} alt="" />
+      <section className="navbar--container | small-container">
+        <a href="/">
+          <div className="navbar--left">
+            <div className="navbar--logo-container">
+              <img className="navbar--logo" src={logo.src} alt="" />
+            </div>
+            <a className="navbar--title | fs-small-700 fw-bold text-primary-400">
+              Style Nation
+            </a>
           </div>
-          <h1 className="navbar--title | fs-small-700 fw-bold text-primary-400">
-            Style Nation
-          </h1>
-        </div>
+        </a>
+
         <button
           className="navbar--mobile"
           onClick={() => {
@@ -30,10 +33,10 @@ export default function Navbar() {
         <nav className={'navbar--nav' + (mobileMenu ? '-mobile' : '-pc')}>
           <ul role="list">
             <li className="navbar--links">
-              <a href="/">Home</a>
+              <a href="/#home">Home</a>
             </li>
             <li>
-              <a href="/">Featured</a>
+              <a href="/#featured">Featured</a>
             </li>
             <li>
               <a href="/">Cars</a>

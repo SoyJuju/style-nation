@@ -1,0 +1,22 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+@use '../utility/breakpoints' as *;
+
+.car-brands {
+  padding-top: 3rem;
+
+  &--title {
+    text-align: center;
+  }
+
+  &--container {
+    @include spaceAround;
+    flex-wrap: wrap;
+
+    img {
+      margin: 1.5rem 3rem;
+      height: 7rem;
+      object-fit: contain;
+    }
+  }
+}

@@ -6,6 +6,7 @@ interface Props {
 const { title } = Astro.props;
 
 import Navbar from '../react/layouts/main/Navbar.jsx';
+import Footer from '../react/layouts/main/Footer';
 
 import Favicon from '../assets/logo-favicon.png';
 ---
@@ -29,5 +30,6 @@ import Favicon from '../assets/logo-favicon.png';
   <body>
     <Navbar client:load />
     <slot />
+    <Footer client:load />
   </body>
 </html>
