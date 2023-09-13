@@ -14,10 +14,11 @@
       width: min(100%, 1300px);
       margin-inline: auto;
       filter: brightness(60%);
-      transition: 1s ease-in-out;
+      transition: border-radius 1s ease-in-out, margin-top 0.5s ease-in-out;
 
       @media (min-width: 1300px) {
         border-radius: 0.8rem;
+        margin-top: 2.5rem;
       }
     }
   }
