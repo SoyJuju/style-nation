@@ -8,7 +8,7 @@ import hyundai from '../../../assets/hyundai-icon.svg';
 
 export default function CarBrands() {
   return (
-    <section className="car-brands | padding-block-300" id="featured">
+    <section className="car-brands" id="featured">
       <h1 className="car-brands--title | fs-small-800 fw-bold padding-block-500">
         Featured Brands
       </h1>
