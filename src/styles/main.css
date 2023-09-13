@@ -4,6 +4,7 @@
   --clr-primary-400: #1a3760;
   --clr-secondary-400: hsl(215, 90%, 42%);
   --clr-neutral-0: #ffffff;
+  --clr-neutral-50: rgba(174, 174, 174, 0.266);
   --clr-neutral-100: rgba(174, 174, 174, 0.558);
   --clr-neutral-800: #010101;
   --clr-neutral-900: #000000;
@@ -45,6 +46,10 @@
   color: #ffffff;
 }
 
+.text-neutral-50 {
+  color: rgba(174, 174, 174, 0.266);
+}
+
 .text-neutral-100 {
   color: rgba(174, 174, 174, 0.558);
 }
@@ -59,6 +64,10 @@
 
 .bg-neutral-0 {
   background-color: #ffffff;
+}
+
+.bg-neutral-50 {
+  background-color: rgba(174, 174, 174, 0.266);
 }
 
 .bg-neutral-100 {
@@ -434,6 +443,12 @@ body {
   background-color: #ffffff;
 }
 
+.main-subheading {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
 .square-button {
   border: 0;
   padding: 0.4rem 1.3rem;
@@ -802,9 +817,6 @@ svg {
 .car-brands {
   padding-top: 3.8rem;
 }
-.car-brands--title {
-  text-align: center;
-}
 .car-brands--container {
   display: flex;
   align-items: center;
@@ -816,4 +828,29 @@ svg {
   height: 7rem;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.car-tags--container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  row-gap: 3rem;
+}
+.car-tags--car {
+  border: 1px solid rgba(174, 174, 174, 0.266);
+  border-radius: 1rem;
+}
+.car-tags--car-title {
+  border-bottom: 1px solid rgba(174, 174, 174, 0.558);
+}
+.car-tags--car-subtitle {
+  padding-top: 0.8rem;
+}
+.car-tags--car-container {
+  padding: 1rem;
+}
+.car-tags--car-container img {
+  border-radius: 0.5rem;
+  aspect-ratio: 3/2;
 }/*# sourceMappingURL=main.css.map */

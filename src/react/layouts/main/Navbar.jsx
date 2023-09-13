@@ -24,12 +24,11 @@ export default function Navbar() {
             <div className="navbar--logo-container">
               <img className="navbar--logo" src={logo.src} alt="" />
             </div>
-            <a className="navbar--title | fs-small-700 fw-bold text-primary-400">
+            <h1 className="navbar--title | fs-small-700 fw-bold text-primary-400">
               Style Nation
-            </a>
+            </h1>
           </div>
         </a>
-
         <button className="navbar--mobile" onClick={handleMobileNav}>
           <img src={menu.src} alt="" />
         </button>
@@ -42,12 +41,12 @@ export default function Navbar() {
             </li>
             <li>
               <button className="no-style-button" onClick={hideMobileNav}>
-                <a href="/#featured">Featured</a>
+                <a href="/#brands">Brands</a>
               </button>
             </li>
             <li>
               <button className="no-style-button" onClick={hideMobileNav}>
-                <a href="/#home">Cars</a>
+                <a href="/#cars">Cars</a>
               </button>
             </li>
             <li>

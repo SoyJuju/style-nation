@@ -10,6 +10,12 @@ body {
   background-color: func.getColor(neutral, 000);
 }
 
+.main-subheading {
+  font-size: func.getFontSize(small, 800);
+  font-weight: func.getFontWeight(bold);
+  text-align: center;
+}
+
 .square-button {
   border: 0;
   padding: 0.4rem 1.3rem;

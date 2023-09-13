@@ -1,12 +1,8 @@
 import '../../../styles/main.css';
 
-import main_heading_image from '../../../assets/lexus.jpg';
-
-import { useMediaQuery } from '@react-hook/media-query';
+import main_heading_image from '../../../assets/main-heading-background.jpg';
 
 export default function MainHeading() {
-  const smallScreen = useMediaQuery('(min-width: 40.5em)');
-
   return (
     <section className="main-heading" id="home">
       <div className="main-heading--background-image">

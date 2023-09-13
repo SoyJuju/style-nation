@@ -1,8 +1,8 @@
 import '../../../styles/main.css';
 
-import facebook from '../../../assets/social-icons.svg#icon-facebook';
+import facebook from '../../../assets/facebook.svg';
 import viber from '../../../assets/viber-icon.svg';
-import telegram from '../../../assets/social-icons.svg#icon-telegram';
+import telegram from '../../../assets/telegram-icon.svg';
 import messenger from '../../../assets/messenger-icon.svg';
 
 export default function Footer() {
@@ -10,9 +10,7 @@ export default function Footer() {
     <footer className="footer | padding-block-700" id="footer">
       <div className="footer--container | large-container bg-primary-100">
         <div className="footer--title | padding-block-600">
-          <h1 className="fs-small-800 text-primary-400 padding-block-200 fw-bold">
-            Get In Touch
-          </h1>
+          <h1 className="main-subheading padding-block-200">Get In Touch</h1>
           <h2 className="fs-small-450 fw-light">
             Let's get you your dream car
           </h2>
@@ -49,12 +47,11 @@ export default function Footer() {
                 href="https://www.facebook.com/profile.php?id=100010511760254&mibextid=b06tZ0"
                 target="_blank"
               >
-                <svg
+                <img
+                  src={facebook.src}
+                  alt=""
                   className="footer--social-icons"
-                  style={{ width: '2.6em' }}
-                >
-                  <use xlinkHref={facebook}></use>
-                </svg>
+                />
               </a>
             </li>
             <li>
@@ -94,9 +91,11 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/julian-hein-0a1504289/"
                 target="_blank"
               >
-                <svg className="footer--social-icons">
-                  <use xlinkHref={telegram}></use>
-                </svg>
+                <img
+                  src={telegram.src}
+                  alt=""
+                  className="footer--social-icons"
+                />
               </a>
             </li>
           </ul>
