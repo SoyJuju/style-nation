@@ -37,6 +37,12 @@ body {
   background-color: func.getColor(primary, 400);
 }
 
+.no-style-button {
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));

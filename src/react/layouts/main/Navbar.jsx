@@ -8,6 +8,14 @@ import menu from '../../../assets/menu-icon.svg';
 export default function Navbar() {
   const { mobileMenu, setMobileMenu } = useMobileMenu();
 
+  const handleMobileNav = () => {
+    setMobileMenu(!mobileMenu);
+  };
+
+  const hideMobileNav = () => {
+    setMobileMenu(false);
+  };
+
   return (
     <header className="navbar">
       <section className="navbar--container | small-container">
@@ -22,27 +30,30 @@ export default function Navbar() {
           </div>
         </a>
 
-        <button
-          className="navbar--mobile"
-          onClick={() => {
-            setMobileMenu(!mobileMenu);
-          }}
-        >
+        <button className="navbar--mobile" onClick={handleMobileNav}>
           <img src={menu.src} alt="" />
         </button>
         <nav className={'navbar--nav' + (mobileMenu ? '-mobile' : '-pc')}>
           <ul role="list">
             <li className="navbar--links">
-              <a href="/#home">Home</a>
+              <button className="no-style-button" onClick={hideMobileNav}>
+                <a href="/#home">Home</a>
+              </button>
             </li>
             <li>
-              <a href="/#featured">Featured</a>
+              <button className="no-style-button" onClick={hideMobileNav}>
+                <a href="/#featured">Featured</a>
+              </button>
             </li>
             <li>
-              <a href="/">Cars</a>
+              <button className="no-style-button" onClick={hideMobileNav}>
+                <a href="/#home">Cars</a>
+              </button>
             </li>
             <li>
-              <a href="/#footer">Contact</a>
+              <button className="no-style-button" onClick={hideMobileNav}>
+                <a href="/#footer">Contact</a>
+              </button>
             </li>
           </ul>
         </nav>
