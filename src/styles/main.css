@@ -576,7 +576,7 @@ body {
   min-height: 100vh;
   height: 100%;
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 1rem;
 }
 
 /* Set core body defaults */
