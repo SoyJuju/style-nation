@@ -5,6 +5,7 @@ import accent from '../../../assets/accent-listing.jpg';
 import wildtrek from '../../../assets/wild-trek-listing.jpg';
 import axio from '../../../assets/axio-listing.jpg';
 import beijing from '../../../assets/beijing-listing.jpg';
+import sportage from '../../../assets/sportage-listing.jpg';
 
 function Car(CarImage, CarName) {
   return (
@@ -32,6 +33,7 @@ export default function CarTags() {
         {Car(axio.src, 'Toyota Corolla Axio')}
         {Car(wildtrek.src, 'Ford WildTrek')}
         {Car(beijing.src, 'BAIC Beijing X55')}
+        {Car(sportage.src, 'KIA Sportage X-Line')}
       </div>
     </section>
   );

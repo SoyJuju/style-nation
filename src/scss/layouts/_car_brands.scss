@@ -6,12 +6,12 @@
   padding-top: 3.8rem;
 
   &--container {
-    @include spaceAround;
+    @include spaceBtwn;
     flex-wrap: wrap;
 
     img {
       margin: 1.5rem 3rem;
-      height: 7rem;
+      height: 8rem;
       object-fit: contain;
     }
   }
