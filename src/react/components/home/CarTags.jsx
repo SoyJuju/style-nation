@@ -25,7 +25,7 @@ function Car(CarImage, CarName) {
 
 export default function CarTags() {
   return (
-    <section className="car-tags | padding-block-800" id="tags">
+    <section className="car-tags | padding-block-800" id="cars">
       <h1 className="main-subheading padding-block-500">Featured Cars</h1>
       <div className="car-tags--container | small-container">
         {Car(lexus570.src, 'Lexus LX 570')}
