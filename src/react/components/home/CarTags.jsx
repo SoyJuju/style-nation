@@ -31,7 +31,7 @@ export default function CarTags() {
         {Car(accent.src, 'Hyundai Accent')}
         {Car(axio.src, 'Toyota Corolla Axio')}
         {Car(wildtrek.src, 'Ford WildTrek')}
-        {Car(beijing.src, 'Beijing')}
+        {Car(beijing.src, 'BAIC Beijing X55')}
       </div>
     </section>
   );
