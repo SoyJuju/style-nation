@@ -576,7 +576,7 @@ body {
   min-height: 100vh;
   height: 100%;
   scroll-behavior: smooth;
-  scroll-padding-top: 1rem;
+  scroll-padding-top: 2.5rem;
 }
 
 /* Set core body defaults */
@@ -617,6 +617,7 @@ svg {
   left: 0;
   top: 0;
   z-index: 10;
+  border-bottom: 1px solid rgba(174, 174, 174, 0.266);
 }
 .navbar--container {
   display: flex;
