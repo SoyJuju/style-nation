@@ -20,8 +20,8 @@ export default function Footer() {
           <div className="footer--tags">
             <h2>OFFICE</h2>
             <p className="footer--detail">
-              Myanmar&mdash; <br />
-              ChanMyaTharZi Township, <br />
+              Myanmar, Mandalay&mdash; <br />
+              Mahar Aung Myay Township, <br />
               39C Street, Between 53 & 54
             </p>
           </div>
@@ -35,8 +35,8 @@ export default function Footer() {
           </div>
           <div className="footer--tags">
             <h2>OPENING HOURS</h2>
-            <p className="footer--detail">Monday - Friday: 9:00 to 6:00</p>
-            <p className="footer--detail">Saturday - Sunday: 8:00 to 5:00</p>
+            <p className="footer--detail">Mon - Fri: 9:00 AM to 5:00 PM</p>
+            <p className="footer--detail">Sat - Sun: 9:00 AM to 5:00 PM</p>
           </div>
         </div>
         <div className="footer--socials">
